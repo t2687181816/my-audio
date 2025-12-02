@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>音频专栏 | Storied Voices</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 min-h-screen">
+    <div class="min-h-screen flex flex-col">
+      <!-- 顶部导航 / Header -->
+      <header class="border-b border-slate-800 bg-slate-900/85 backdrop-blur">
+        <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <div
+              class="h-9 w-9 rounded-full bg-sky-500/90 grid place-items-center text-xs font-semibold"
+            >
+              FM
+            </div>
+            <div>
+              <p
+                class="text-[10px] font-semibold uppercase tracking-[0.25em] text-slate-400"
+              >
+                My Audio Column
+              </p>
+              <h1 class="text-lg md:text-xl font-bold tracking-tight">
+                音频专栏 · Audio Column
+              </h1>
+            </div>
+          </div>
+
+          <nav class="hidden md:flex items-center gap-4 text-xs md:text-sm text-slate-300">
+            <a href="#episodes" class="hover:text-white">最新剧集 Episodes</a>
+            <a href="#about" class="hover:text-white">关于 About</a>
+            <a href="#contact" class="hover:text-white">联系 Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- 主体 / Main -->
+      <main class="flex-1">
+        <div class="mx-auto max-w-6xl px-4 py-8 space-y-10">
+          <!-- 节目头部信息 / Column hero -->
+          <section class="grid gap-6 lg:grid-cols-[minmax(0,2fr),minmax(0,3fr)] items-start">
+            <!-- 封面 / Cover -->
+            <div
+              class="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/80 shadow"
+            >
+              <div
+                class="aspect-[4/3] grid place-items-center text-[11px] uppercase tracking-[0.25em] text-slate-500"
+              >
+                专栏封面 · Column Cover
+              </div>
+              <!-- 如果你有封面图，可以把上面 div 换成： 
+              <img src="your-cover.jpg" alt="专栏封面" class="w-full h-full object-cover" />
+              -->
+            </div>
+
+            <!-- 文案 / Text -->
+            <div class="space-y-4">
+              <div class="flex flex-wrap items-center gap-2 text-[11px] text-slate-400">
+                <span
+                  class="inline-flex items-center gap-1 rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-medium text-emerald-300"
+                >
+                  城市 · 日常 · 声音
+                </span>
+                <span
+                  class="inline-flex items-center gap-1 rounded-full bg-slate-800 px-2 py-0.5 text-[10px]"
+                >
+                  by t · Audio Column
+                </span>
+                <span class="hidden sm:inline">·</span>
+                <span class="hidden sm:inline">双语讲述 · Bilingual Storytelling</span>
+              </div>
+
+              <div class="space-y-2">
+                <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">
+                  被忽略的角落 · Storied Voices
+                </h2>
+                <p class="text-sm md:text-base text-slate-300 leading-relaxed">
+                  这是一档关注“日常空间里被忽略的故事”的音频专栏。
+                  我们会从街角的小店、校园的一条路、城市的一块空地聊起，追踪它们背后的历史、情感和记忆。
+                  节目会穿插采访、现场环境声和叙事，让你在通勤、散步或做饭的时候，重新感受身边的世界。
+                </p>
+                <p class="text-xs md:text-sm text-slate-400 leading-relaxed">
+                  This column focuses on the stories hiding in everyday spaces: a tiny shop, a
+                  campus pathway, a forgotten building. Through soundscapes, interviews and
+                  narration, we explore how places hold memory and emotion.
+                </p>
+              </div>
+
+              <!-- 订阅 / Subscribe -->
+              <div class="space-y-2">
+                <p class="text-xs text-slate-400 uppercase tracking-[0.2em]">
+                  Subscribe · 订阅收听
+                </p>
+                <div class="flex flex-wrap gap-2 text-xs">
+                  <a
+                    href="#"
+                    class="rounded-full border border-slate-700 bg-slate-900/80 px-3 py-1.5 hover:border-sky-500 hover:text-sky-200"
+                  >
+                    Spotify
+                  </a>
+                  <a
+                    href="#"
+                    class="rounded-full border border-slate-700 bg-slate-900/80 px-3 py-1.5 hover:border-sky-500 hover:text-sky-200"
+                  >
+                    Apple Podcasts
+                  </a>
+                  <a
+                    href="#"
+                    class="rounded-full border border-slate-700 bg-slate-900/80 px-3 py-1.5 hover:border-sky-500 hover:text-sky-200"
+                  >
+                    小宇宙 / 荔枝
+                  </a>
+                  <a
+                    href="#"
+                    class="rounded-full border border-slate-700 bg-slate-900/80 px-3 py-1.5 hover:border-slate-500"
+                  >
+                    RSS
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 最新剧集 / Most Recent Episodes -->
+          <section id="episodes" class="space-y-6">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-xl font-semibold">最新剧集 · Most Recent Episodes</h3>
+              <span class="text-xs text-slate-400">手动改这里的日期、标题和音频链接即可</span>
+            </div>
+
+            <!-- Episode list -->
+            <div class="space-y-5">
+              <!-- Episode 1 -->
+              <article
+                class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4 md:p-5 space-y-3"
+              >
+                <div class="flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-400">
+                  <span>2025 年 11 月 30 日 · November 30, 2025</span>
+                  <span>EP 05 · 校园长椅与深夜聊天</span>
+                </div>
+
+                <div class="space-y-2">
+                  <h4 class="text-sm md:text-base font-semibold">
+                    那张总是坐满人的长椅 · The Bench Everyone Knows
+                  </h4>
+                  <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
+                    在每个校园里，都会有一两张“永远有人”的长椅。
+                    这一集从一张普通长椅出发，聊聊那里发生过的告白、崩溃和深夜聊天，
+                    也聊聊为什么公共空间会承载我们的情绪和关系。
+                  </p>
+                </div>
+
+                <!-- Audio player -->
+                <div class="space-y-1">
+                  <audio
+                    controls
+                    class="w-full rounded-xl border border-slate-800 bg-slate-950"
+                  >
+                    <!-- 把 src 换成你自己的音频链接 -->
+                    <source src="audio/ep05-bench.mp3" type="audio/mpeg" />
+                    你的浏览器不支持音频播放，请使用现代浏览器。Your browser does not support audio.
+                  </audio>
+                  <p class="text-[11px] text-slate-500">
+                    提示：把 <code>src="audio/ep05-bench.mp3"</code> 换成你自己的音频链接。
+                  </p>
+                </div>
+              </article>
+
+              <!-- Episode 2 -->
+              <article
+                class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4 md:p-5 space-y-3"
+              >
+                <div class="flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-400">
+                  <span>2025 年 11 月 16 日 · November 16, 2025</span>
+                  <span>EP 04 · 食堂窗口的排队记忆</span>
+                </div>
+
+                <div class="space-y-2">
+                  <h4 class="text-sm md:text-base font-semibold">
+                    等一份饭，也等一份生活节奏 · Waiting in Line
+                  </h4>
+                  <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
+                    从食堂窗口的排队声、托盘碰撞声，到和同学一起吐槽今天的菜，
+                    这一集用环境声和旁白记录“排队”这件小事背后，关于时间感、社交和家的味道。
+                  </p>
+                </div>
+
+                <div class="space-y-1">
+                  <audio
+                    controls
+                    class="w-full rounded-xl border border-slate-800 bg-slate-950"
+                  >
+                    <source src="audio/ep04-cafeteria.mp3" type="audio/mpeg" />
+                    你的浏览器不支持音频播放，请使用现代浏览器。Your browser does not support audio.
+                  </audio>
+                  <p class="text-[11px] text-slate-500">
+                    可以统一把所有音频都放在 <code>audio/</code> 文件夹里，方便管理。
+                  </p>
+                </div>
+              </article>
+
+              <!-- Episode 3 -->
+              <article
+                class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4 md:p-5 space-y-3"
+              >
+                <div class="flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-400">
+                  <span>2025 年 11 月 02 日 · November 2, 2025</span>
+                  <span>EP 03 · 深夜便利店的灯光</span>
+                </div>
+
+                <div class="space-y-2">
+                  <h4 class="text-sm md:text-base font-semibold">
+                    城市失眠者的中转站 · Late-night Convenience Store
+                  </h4>
+                  <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
+                    便利店总是在你最累、最饿或最迷茫的时候开着灯。
+                    我们录下了便利店的冰箱嗡嗡声、扫码声和脚步声，聊聊那些在深夜买咖啡、
+                    泡面和速冻食物的人，以及他们暂时停靠的心情。
+                  </p>
+                </div>
+
+                <div class="space-y-1">
+                  <audio
+                    controls
+                    class="w-full rounded-xl border border-slate-800 bg-slate-950"
+                  >
+                    <source src="audio/ep03-store.mp3" type="audio/mpeg" />
+                    你的浏览器不支持音频播放，请使用现代浏览器。Your browser does not support audio.
+                  </audio>
+                </div>
+              </article>
+
+              <!-- 继续复制这个 <article> 可以新增更多剧集 -->
+            </div>
+          </section>
+
+          <!-- 关于专栏 & 联系方式 -->
+          <section
+            id="about"
+            class="grid gap-6 lg:grid-cols-[minmax(0,3fr),minmax(0,2fr)] border-t border-slate-800 pt-6"
+          >
+            <div class="space-y-3">
+              <h3 class="text-lg font-semibold">关于本专栏 · About this column</h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                你可以在这里写一段更长的专栏介绍：比如你为什么想做这档节目、音频大概多久更新一次、
+                会出现哪些人物、你期望听众在收听时获得什么感受等等。
+              </p>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                This section can be a longer description of your project: why you started it,
+                how often you publish episodes, and what kind of stories or themes you focus on.
+              </p>
+            </div>
+
+            <div
+              id="contact"
+              class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4 text-sm text-slate-300 space-y-2"
+            >
+              <h4 class="text-base font-semibold">创作者 & 联系方式 · Creator & Contact</h4>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                把下面改成你的信息，例如：
+                “t，一名在海外读书的学生，喜欢用声音记录日常的情绪和小细节。”
+              </p>
+              <ul class="mt-1 space-y-1 text-xs text-slate-400">
+                <li>✉️ Email：youremail@example.com</li>
+                <li>📱 Instagram / 小红书：@yourhandle</li>
+                <li>🌐 作品集 / 个人网站：your-portfolio-link</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="border-t border-slate-800 bg-slate-900/90 mt-4">
+        <div
+          class="mx-auto max-w-6xl px-4 py-4 text-[11px] text-slate-500 flex flex-wrap items-center justify-between gap-2"
+        >
+          <span>© <span id="year"></span> Storied Voices · Audio Column</span>
+          <span>Built with HTML + Tailwind CSS · 可在线编辑</span>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
